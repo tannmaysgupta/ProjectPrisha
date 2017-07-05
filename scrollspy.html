@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			height: 3000px;
+			width: 3000px;
+		}
+		div.headings{
+			height: 60px;
+			background-color: black;
+			position: fixed;
+			width: 100%;
+			top:0px;
+			left: 0px;
+			z-index: 10;
+			display: flex;
+			justify-content: space-around;
+		}
+		div.headings > div{
+			height: inherit;
+			width: 100px;
+			background-color: grey;
+		}
+		div.body{
+			position: absolute;
+			top: 0px;
+			height: inherit;
+			width: inherit;
+		}
+		div.a{
+			height: 700px;
+			width: 100%;
+			background-color: red;
+		}
+		div.b{
+			height: 700px;
+			width: 100%;
+			background-color: green;
+		}
+		div.c{
+			height: 700px;
+			width: 100%;
+			background-color: grey;
+		}
+		div.d{
+			height: 700px;
+			width: 100%;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body onscroll="startscroll()">
+<div class="headings">
+	<div class="e"></div>
+	<div class="f"></div>
+	<div class="g"></div>
+	<div class="h"></div>
+</div>
+<div class="body">
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="d"></div>
+</div>
+<button onclick="countsize()">click</button>
+	<script>
+	var body,nav;
+	body=document.querySelectorAll('div.body > div');
+	nav=document.querySelectorAll('div.headings > div');
+console.log(body);
+console.log(nav);
+		function startscroll(){
+			for (var i = 0; i <body.length ; i++) {
+				console.log(window.pageYOffset+" "+body[i].offsetTop);
+				if (window.pageYOffset==body[i].offsetTop) {
+					console.log("aa gya");
+					nav[i].style.backgroundColor="aqua";
+				}
+				else
+			}
+		}
+	</script>
+</body>
+</html>

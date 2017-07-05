@@ -1,0 +1,109 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Table Searching</title>
+	<style>
+		th{
+			font-weight: bolder;
+		}
+		table, th, td{
+			font-size: 20px;
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+	</head>
+	<body>
+	<input type="text" name="search">
+	<button class="s" onclick="Search()">Search by Name</button>
+	<button class="s" onclick="Search()">Search by Country</button>
+	<button class="s" onclick="Search()">Search by Pet</button>
+	<button><a href="">RESET</a></button>
+	<table>
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Country</th>
+			<th>Pet</th>
+		</tr>
+		</thead>
+		<tbody>
+			
+		<tr>
+			<td>Abhi</td>
+			<td>Canada</td>
+			<td>koala</td>
+		</tr>
+		<tr>
+			<td>Riya</td>
+			<td>France</td>
+			<td>Parrot</td>
+		</tr>
+		<tr>
+			<td>Sid</td>
+			<td>UK</td>
+			<td>Pig</td>
+		</tr>
+		<tr>
+			<td>Kritika</td>
+			<td>Germany</td>
+			<td>Cat</td>
+		</tr>
+		<tr>
+			<td>Kartik</td>
+			<td>China</td>
+			<td>Frog</td>
+		</tr>
+		<tr>
+			<td>Radhika</td>
+			<td>India</td>
+			<td>Dog</td>
+		</tr>
+		</tbody>
+	</table>
+	<script>
+		var input=document.getElementsByName("search")[0];
+		var s=document.getElementsByClassName("s");
+		console.log(s);
+		var n=0;
+		
+		function Search(){
+		for (var j=0; j<s.length; j++) 
+		{
+			console.log("element");
+			console.log(s[j]);
+			console.log("target");
+			console.log(event.target);
+			if(s[j]==event.target){
+				console.log("hahah");
+				n=j+1;
+				console.log(n);
+			}
+		}
+		console.log(n);
+			var val= input.value;
+			var a=document.querySelectorAll("table > tbody > tr");
+			console.log(a);
+			for(var i =0; i<a.length; i++)
+			{
+				// var str="td:nth-child("+n+")";
+				var d = a[i].querySelector('td:nth-child('+n+')');
+				console.log(d);
+				if(d.innerHTML.toLowerCase()==val.toLowerCase()){
+					a[i].style.display="";
+				}
+				else
+				{
+					a[i].style.display="none";
+				}
+			}
+		}
+
+	</script>
+	</body>
+	</html>
