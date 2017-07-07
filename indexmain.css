@@ -16,16 +16,13 @@ div.carousel-inner{
 	height: 652.5px;
 	width: 100% !important;
 }
-
 div[class*=col]{
 	padding: 0px !important;
 }
-
 div.customCarousel{
 	height: 702px;
 	width: 100%;
 }
-
 div.mainlogo{
 	height: 100%;
 	width: inherit;
@@ -44,7 +41,6 @@ div.mainlogo > img{
 	border: 3px solid white;
 	z-index: 11;
 }
-
 div.row > div > nav{
 	position: absolute;
 	display: flex;
@@ -81,20 +77,17 @@ div.row > div >nav>a >div{
 	-moz-user-select:none;
 	-o-user-select:none;
 }
-
 div.row > div > nav > a > div.logo{
 	margin-top: 2px;
 	margin-right: 40px;
 	position: relative;
 	padding: 0px;
 }
-
 div.row > div > nav> a > div.logo > img{
 	margin-top: 15px;
 	transform: scale(1.5,1.6);
 }
-
-div#WWD{
+div.outerbox{
 	height: 702px;
 	width: 100%;
 	background: linear-gradient(to top left, #ffd194 1%,#70e1f5 50%,#ffd194 100%);
@@ -107,62 +100,28 @@ div.innersection{
 	margin-top:24px;
 	overflow-x: hidden;
 	overflow-y: auto;
+	padding-top: 50px;
 }
-
 div.circle-content{
 	height: 175px;
 	width: 175px;
 	background-color: white;
 	border-radius: 15%;
 	margin:0px auto;
-	transition: 0.5s;
+	padding-top: 15px;
+	vertical-align: middle;
+	transform-style: preserve-3d;
 }
-
-div.circle-content:hover{
-	position: relative;
-	transform: scale(2,2);
+div#circle-container div.col-md-3{
+	margin-top:15px;
+	margin-bottom: 15px;
 }
-
-div#circle-container div.col-md-2{
-	margin-top:12px;
-	margin-bottom: 10px;
+div.cwrapper{
+	text-align: center;
+	padding-top: 25%;
+	transform: translateZ(50px);
 }
-
-div#AU{
-	height: 702px;
-	width: 100%;
-	background: linear-gradient(to top left, #ffd194 1%,#70e1f5 50%,#ffd194 100%);
-}
-
-div.aboutus{
-	height: 654.5px;
-	width: 100%;
-	background-color:transparent;
-	box-shadow:0px 0px 12px .5px #B0B0B0;
-	margin-top:24px;
-	padding: 40px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
 div.words{
 	font-size: 18px;
 	font-family:'Nunito', 'Quicksand','Open Sans', 'Ubuntu',sans-serif;
-}
-
-div#HWD{
-	height: 702px;
-	width: 100%;
-	background: linear-gradient(to top left, #ffd194 1%,#70e1f5 50%,#ffd194 100%);
-}
-
-div.howwedo{
-	height: 654.5px;
-	width: 100%;
-	background-color:transparent;
-	box-shadow:0px 0px 12px .5px #B0B0B0;
-	margin-top:24px;
-	padding: 40px;
-	overflow-x: hidden;
-	overflow-y: auto;
 }
