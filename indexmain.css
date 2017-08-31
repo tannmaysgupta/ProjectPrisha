@@ -48,8 +48,6 @@ div.row > div > nav{
 	bottom: 0px;
 	height: 50px;
 	width: 100%;
-	/*background-color: #283832;*/
-	/*background-color: #82a078;*/
 	background-color: #33CCFF;
 	z-index: 9999;
 }
@@ -101,6 +99,7 @@ div.innersection{
 	overflow-x: hidden;
 	overflow-y: auto;
 	padding-top: 50px;
+	padding-left: 20px;
 }
 div.circle-content{
 	height: 175px;

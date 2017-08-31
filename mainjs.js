@@ -19,6 +19,10 @@ var a=document.getElementsByTagName('nav')[0];
 		a.style.position="absolute";
 		a.style.bottom=0+"px";
 		a.style.top="";
-	}
-	
+	}	
+}
+
+function sort()
+{
+	var ch= $
 }
