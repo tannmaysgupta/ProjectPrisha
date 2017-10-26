@@ -1,0 +1,24 @@
+body{
+	background-color: #33CCFF;
+	padding-top: 20px;
+}
+
+div.mainform{
+	height: auto;
+	background-color: #F7F7F7;
+	padding-bottom: 15px;
+}
+
+form div{
+	font-size: 20px;
+	height: 70px;
+	width: 90%;
+	background-color: #F8F8F8;
+}
+/*
+.carins .travelins{
+	display: none;
+}*/
+
+
+

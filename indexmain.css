@@ -124,3 +124,10 @@ div.words{
 	font-size: 18px;
 	font-family:'Nunito', 'Quicksand','Open Sans', 'Ubuntu',sans-serif;
 }
+
+div.db{
+	height: 100px;
+	width: 500px;
+	background-color: green;
+	opacity: 10%
+}
