@@ -24,5 +24,5 @@ var a=document.getElementsByTagName('nav')[0];
 
 function sort()
 {
-	var ch= $
+	var ch=document.getElementsByClassName(supp);
 }

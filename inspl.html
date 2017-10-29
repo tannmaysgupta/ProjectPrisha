@@ -29,15 +29,14 @@
 			</div>
 			<div class="form-group">
 				<label for="ptype">Select list:</label>
-				<select class="form-control" id="ptype">
-					<option value="">Choose Type</option>
-            		<option value="Car Insurance">Car Insurance</option>
-            		<option value="Travel Insurance">Travel Insurance </option>		
-            		<option value="Term Life">Term Life</option>
-            		<option value="Home Insurance">Home Insurance</option>
+				<select class="form-control" id="ptype" onchange="selection()">
+					<option value="" class="types">Choose Type</option>
+            		<option value="Car Insurance" class="types">Car Insurance</option>
+            		<option value="Travel Insurance" class="types">Travel Insurance </option>		
+            		<option value="Term Life" class="types">Term Life</option>
+            		<option value="Home Insurance" class="types">Home Insurance</option>
 				</select>
 			</div> 
-			<button type="submit" class="btn btn-default">Submit</button>
 			<div class="form-group carins">
 				<label for="carno">Car Registration Number</label>
 				<input type="text" class="form-control" id="carno">
@@ -66,13 +65,74 @@
 				<label for="cover">Passport Number</label>
 				<input type="text" class="form-control" id="Passportno">
 			</div>
+			<div class="form-group termlife">
+				<label for="cover">Cover Value</label>
+				<input type="text" class="form-control" id="Covervalue">
+			</div>
+			<div class="form-group termlife">
+				<label for="cover">Date of birth</label>
+				<input type="Date" name="DOB">
+			</div>
+			<div class="form-group termlife">
+				<label for="smoke">Do you smoke</label>
+				<label class="radio-inline"><input type="radio" name="SmokeYes">Yes</label>
+				<label class="radio-inline"><input type="radio" name="SmokeNO">No</label>
+			</div>
+			<div class="form-group termlife">
+				<label for="income">Annual Income</label>
+				<label class="radio-inline"><input type="radio" name="upto10">upto 10 lac</label>
+				<label class="radio-inline"><input type="radio" name="10-20">10-20 lac</label>
+				<label class="radio-inline"><input type="radio" name="20-30">20-30 lac</label>
+				<label class="radio-inline"><input type="radio" name="30+">more than 30 lac</label>
+			</div>
+			<div class="form-group homeins">
+				<label for="is house rented"></label>
+				<label class="radio-inline"><input type="radio" name="HomeYes">Yes</label>
+				<label class="radio-inline"><input type="radio" name="HomeNo">No</label>
+			</div>
+			<div class="form-group homeins">
+				<label for="ptype">Age of Property</label>
+				<select class="form-control" id="ptype">
+					<option value="">Age in years</option>
+            		<option value="upto 20">upto 20</option>
+            		<option value="20-40">20-40</option>		
+            		<option value="40+">40+</option>
+				</select>
+			</div> 
+			<div class="form-group homeins">
+				<label for="Type of Property"></label>
+				<label class="radio-inline"><input type="radio" name="Indi">Individual</label>
+				<label class="radio-inline"><input type="radio" name="Flat">Flat/Appartment</label>
+			</div>
+			<div class="form-group homeins">
+				<label for="coveragetype"></label>
+				<label class="checkbox-inline"><input type="checkbox" value="Structure">Structure</label>
+				<label class="checkbox-inline"><input type="checkbox" value="Interior">Interior</label>
+			</div>
+			<button type="submit" class="btn btn-default">Submit Form</button>
 		</form> 
         </div>
     </div>
 </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script type="text/javascript">
+	function selection()
+	{
+		var sel=document.getElementById('ptype');
+		var type=document.getElementsByClassName('types');
 
+		if (type==Car Insurance){
+			document.getElementsByClassName('carins').style.display="";
+		}
+		if (type==Travel Insurance){
+			document.getElementsByClassName('travelins').style.display="";
+		}
+		if (type==Home Insurance){
+			document.getElementsByClassName('homeins').style.display="";
+		}
+		if (type==Term Life){
+			document.getElementsByClassName('termlife').style.display="";
+		}
+	}
+</script>
 </body>
 </html>

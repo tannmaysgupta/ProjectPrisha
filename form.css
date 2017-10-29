@@ -15,10 +15,19 @@ form div{
 	width: 90%;
 	background-color: #F8F8F8;
 }
-/*
-.carins .travelins{
+
+div.carins{
 	display: none;
-}*/
+}
 
+div.termlife{
+	display: none;;
+}
 
+div.homeins{
+	display: none;
+}
 
+div.travelins{
+	display: none;
+}
